@@ -1,4 +1,4 @@
-package command
+package me.cliff.bot.command
 
 import dev.kord.core.Kord
 import dev.kord.core.behavior.interaction.response.DeferredPublicMessageInteractionResponseBehavior

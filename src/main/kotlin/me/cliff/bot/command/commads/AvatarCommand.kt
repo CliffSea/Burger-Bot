@@ -1,6 +1,6 @@
-package command.commads
+package me.cliff.bot.command.commads
 
-import command.Command
+import me.cliff.bot.command.Command
 import dev.kord.common.Color
 import dev.kord.core.Kord
 import dev.kord.core.behavior.interaction.response.DeferredPublicMessageInteractionResponseBehavior

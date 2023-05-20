@@ -1,8 +1,8 @@
-package command
+package me.cliff.bot.command
 
-import command.commads.AvatarCommand
-import command.commads.PingCommand
-import command.commads.ServerCommand
+import me.cliff.bot.command.commads.AvatarCommand
+import me.cliff.bot.command.commads.PingCommand
+import me.cliff.bot.command.commads.ServerCommand
 import dev.kord.core.Kord
 import dev.kord.core.behavior.interaction.response.respond
 import dev.kord.core.event.interaction.GuildChatInputCommandInteractionCreateEvent

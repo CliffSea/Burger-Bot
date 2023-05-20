@@ -1,4 +1,6 @@
-import command.CommandManager
+package me.cliff.bot
+
+import me.cliff.bot.command.CommandManager
 import dev.kord.common.annotation.KordPreview
 import dev.kord.core.Kord
 import dev.kord.core.event.gateway.ReadyEvent
