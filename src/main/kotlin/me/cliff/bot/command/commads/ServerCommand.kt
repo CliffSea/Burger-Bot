@@ -9,6 +9,8 @@ import dev.kord.rest.builder.interaction.GlobalChatInputCreateBuilder
 import dev.kord.common.Color
 import dev.kord.rest.Image
 import dev.kord.rest.builder.message.EmbedBuilder
+import java.time.LocalTime
+import java.time.format.DateTimeFormatter
 
 object ServerCommand: Command("server","Says Info about the server") {
     override fun create(guild: GlobalChatInputCreateBuilder) {
@@ -18,6 +20,11 @@ object ServerCommand: Command("server","Says Info about the server") {
        val n  = guild.interaction.getGuild().name
         val id = guild.interaction.getGuild().id
         val members = guild.interaction.getGuild().memberCount
+        val currentTime = LocalTime.now()
+        val formatter = DateTimeFormatter.ofPattern("HH:mm")
+
+
+
 
 
         val embed = EmbedBuilder().apply {
@@ -39,7 +46,7 @@ object ServerCommand: Command("server","Says Info about the server") {
                 }.toString()
             }
             footer {
-                text = "Burger | ${java.time.Clock.systemDefaultZone()}"
+                text = "Burger | ${currentTime.format(formatter)}"
             }
         }
         res.respond { embeds = mutableListOf(embed) }

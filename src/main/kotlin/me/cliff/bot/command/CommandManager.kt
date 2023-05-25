@@ -1,11 +1,9 @@
 package me.cliff.bot.command
 
-import me.cliff.bot.command.commads.AvatarCommand
-import me.cliff.bot.command.commads.PingCommand
-import me.cliff.bot.command.commads.ServerCommand
 import dev.kord.core.Kord
 import dev.kord.core.behavior.interaction.response.respond
 import dev.kord.core.event.interaction.GuildChatInputCommandInteractionCreateEvent
+import me.cliff.bot.command.commads.*
 
 
 class CommandManager {
@@ -13,6 +11,8 @@ class CommandManager {
         PingCommand,
         ServerCommand,
         AvatarCommand,
+        BanCommand,
+        UnBanCommand,
     )
 
   suspend fun register(k: Kord){
