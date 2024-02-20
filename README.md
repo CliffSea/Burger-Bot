@@ -38,6 +38,8 @@ Burger Bot is an ongoing project, and updates will be added as time permits. Sta
 
 Contributions are welcome, so feel free to contribute to the project by submitting pull requests or suggesting new features.
 
-For more information, visit the project repository: https://github.com/CliffSea/Burger-Bot
+## about the project
+
+it's been a while since i worked on this 9 months to be exact, I'm been busy with personal stuff, I might continue working on this or make a rewrite in another language still thinking on it.
 
 Enjoy using Burger Bot!
